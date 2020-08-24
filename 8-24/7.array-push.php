@@ -23,6 +23,7 @@
 
         $ar3['data'][2] = 100;
 
+        
         // 在php處理陣列不用for loop，用foreach
         foreach ($ar4 as $k => $v) {
 
