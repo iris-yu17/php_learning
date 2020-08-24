@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 
+
 <body>
     <table border="1">
         <?php for ($i = 1; $i <= 9; $i++) : ?>

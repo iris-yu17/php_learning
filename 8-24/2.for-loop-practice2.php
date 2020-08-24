@@ -21,7 +21,6 @@
             <tr>
                 <?php for ($j = 0; $j <= 255; $j += 17) : ?>
 
-
                     <!-- WRONG -->
                     <!-- 原本#000000會少個零 -->
                     <!-- <td style="background-color: #<?= sprintf("%X", $i) ?><?= sprintf("%X", $j) ?>00"></td> -->
