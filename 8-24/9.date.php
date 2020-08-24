@@ -1,6 +1,6 @@
 <div>
     <?php
-    //date_default_timezone_set('Asia/Tokyo');
+    date_default_timezone_set('Asia/Taipei');
 
     $now = date("Y-m-d H:i:s");
 
@@ -10,11 +10,12 @@
     // strtotime 字串轉為timestamp
     $date1 = date("Y-m-d H:i:s", strtotime('2020-07-21'));
 
+    $weekday = date('D');
+
     echo "now: $now<br>";
     echo "after30: $after30<br>";
     echo "date1: $date1<br>";
-
-
+    echo "now:$weekday<br>";
 
     ?>
 </div>
