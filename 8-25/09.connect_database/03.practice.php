@@ -14,6 +14,7 @@ $rows = $stmt->fetchAll();
     <table class="table table-striped">
         <thead>
             <tr>
+                <th scope="col"><i class="fas fa-trash-alt"></i></th>
                 <th scope="col">#</th>
                 <th scope="col">name</th>
                 <th scope="col">email</th>
@@ -26,6 +27,7 @@ $rows = $stmt->fetchAll();
         <tbody>
             <?php foreach ($rows as $r) : ?>
                 <tr>
+                    <td><a href="javascript:"><i class="fas fa-trash-alt"></i></a></td>
                     <td><?= $r['sid'] ?></td>
                     <td><?= $r['name'] ?></td>
                     <td><?= $r['email'] ?></td>
