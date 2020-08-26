@@ -1,5 +1,6 @@
 <?php
 $page_title = '首頁';
+
 ?>
 
 <?php require __DIR__ . '/__html_head.php'; ?>
