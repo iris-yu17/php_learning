@@ -1,8 +1,8 @@
 <?php
 require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
 
-
-$sql = "INSERT INTO `contact_list` //sid不用加
+// sid不用加
+$sql = "INSERT INTO `contact_list` 
 (`name`, `email`, `mobile`, `birthdate`, `address`, `created_at`)
  VALUES (?, ?, ?, ?, ?, NOW())";  //created_at帶NOW()
 
