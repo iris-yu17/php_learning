@@ -1,5 +1,5 @@
 <?php
-$page_title = '首頁';
+$page_title = '資料列表';
 $page_name = 'data-list';
 require __DIR__ . '/01.connect.php';
 

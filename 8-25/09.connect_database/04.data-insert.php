@@ -1,11 +1,11 @@
 <?php
 $page_title = '增新資料';
 $page_name = 'data-insert';
-require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
+require __DIR__ . '/01.connect.php';
 ?>
 
-<?php require __DIR__ . '/../8-25/08.devide_file/__html_head.php'; ?>
-<?php include __DIR__ . '/../8-25/08.devide_file/__navbar.php'; ?>
+<?php require __DIR__ . '/../08.devide_file/__html_head.php'; ?>
+<?php include __DIR__ . '/../08.devide_file/__navbar.php'; ?>
 
 
 <div class="container">
@@ -28,7 +28,7 @@ require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
                         </div>
                         <div class="form-group">
                             <label for="mobile">mobile</label>
-                            <input type="text" class="form-control" id="mobile" name="mobile">
+                            <input type="tel" class="form-control" id="mobile" name="mobile" pattern="09\d{2}-?\d{3}-?\d{3}">
                         </div>
                         <div class="form-group">
                             <label for="birthday">birthday</label>
@@ -50,11 +50,14 @@ require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
 </div>
 
 
-<?php include __DIR__ . '/../8-25/08.devide_file/__scripts.php'; ?>
+<?php include __DIR__ . '/../08.devide_file/__scripts.php'; ?>
 
 
 <script>
     function checkForm() {
+
+        // TODO: 檢查資料格式
+
         const fd = new FormData(document.form1);
 
         fetch('data-insert-api.php', {
@@ -70,4 +73,4 @@ require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
     }
 </script>
 
-<?php include __DIR__ . '/../8-25/08.devide_file/__html_foot.php'; ?>
+<?php include __DIR__ . '/../08.devide_file/__html_foot.php'; ?>

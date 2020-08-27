@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
+require __DIR__ . '/01.connect.php';
 
 // sid不用加
 $sql = "INSERT INTO `contact_list` 
