@@ -21,10 +21,12 @@ $rows = $stmt->fetchAll();
 $perPage = 5; // 每頁有幾筆資料
 $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
 
+
 $t_sql = "SELECT COUNT(1) FROM `contact_list`";
 $totalRows = $pdo->query($t_sql)->fetch(PDO::FETCH_NUM)[0];
-$totalPages = ceil($totalRows / $perPage);
 
+echo $totalRows;
+$totalPages = ceil($totalRows / $perPage);
 
 $rows = [];
 if ($totalRows > 0) {

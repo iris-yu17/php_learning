@@ -3,7 +3,9 @@ $page_title = '首頁';
 require __DIR__ . '/01.connect.php';
 
 $stmt = $pdo->query("SELECT * FROM `contact_list` LIMIT 5");
+// echo $stmt;
 $rows = $stmt->fetchAll();
+
 ?>
 
 <?php require __DIR__ . '/../08.devide_file/__html_head.php'; ?>

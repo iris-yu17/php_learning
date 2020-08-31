@@ -2,6 +2,7 @@
 if (!isset($page_name)) $page_name = '';
 ?>
 
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -9,9 +10,13 @@ if (!isset($page_name)) $page_name = '';
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item <?= $page_name == 'data-list' ? 'active' : '' ?>">
+                    <!-- $page_name覆蓋 -->
+                    <!-- <li class="nav-item active">
+                <li class="nav-item"> -->
                     <a class="nav-link" href="<?= WEB_ROOT ?>/8-25/09.connect_database/03.data-list-3-js-remove.php">列表</a>
                 </li>
                 <li class="nav-item <?= $page_name == 'data-insert' ? 'active' : '' ?>">
@@ -23,3 +28,11 @@ if (!isset($page_name)) $page_name = '';
         </div>
     </div>
 </nav>
+
+
+<style>
+    .navbar .nav-item.active {
+        background-color: #7abaff;
+        border-radius: 10px;
+    }
+</style>

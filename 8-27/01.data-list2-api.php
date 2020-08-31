@@ -1,5 +1,3 @@
-<!-- 這是提供資料的php -->
-
 <?php
 require __DIR__ . '/../8-25/09.connect_database/01.connect.php';
 

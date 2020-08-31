@@ -19,6 +19,7 @@ $rows = $stmt->fetchAll();
 
     <!-- `sid`, `name`, `email`, `mobile`, `birthday`, `address`, `created_at` -->
     <table class="table table-striped">
+        
         <thead>
             <tr>
                 <th scope="col"><i class="fas fa-trash-alt"></i></th>
