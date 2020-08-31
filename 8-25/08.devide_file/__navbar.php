@@ -24,6 +24,11 @@ if (!isset($page_name)) $page_name = '';
                 </li>
 
             </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item <?= $page_name == 'login' ? 'active' : '' ?>">
+                    <a class="nav-link" href="<?= WEB_ROOT ?>/../php_learning/8-31/01.login.php">登入</a>
+                </li>
+            </ul>
 
         </div>
     </div>
