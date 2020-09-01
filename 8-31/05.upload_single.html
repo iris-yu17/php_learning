@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <button onclick="file_input.click()">上傳圖一</button>
+        <input type="text" name="field1">
+        <br>
+
+
+    </form>
+
+    <input type="file" id="file_input" name="file_input" style="display: none">
+
+    <script>
+        const file_input = document.querySelector('#file_input');
+
+        file_input.addEventListener('change', function () {
+            // const fd = new FormData();
+            console.log(file_input.files)
+
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
